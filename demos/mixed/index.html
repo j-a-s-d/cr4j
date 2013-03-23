@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jade.min.js"></script>
+<script type="text/javascript" src="scripts/cr4j.min.js"></script>
+
+<script type="text/template" id="first-jade"></script>
+<script type="text/template" id="header-jade"></script>
+<script type="text/template" id="page-jade">
+//- the specific page content template is inlined in this demo, and the other templates are external
+body
+	#divWorkspace
+		br
+		label This is Client-side Renderer for Jade in action!
+		br
+		#divTimeSpent
+		br
+</script>
+<script type="text/template" id="footer-jade"></script>
+<script type="text/template" id="last-jade"></script>
+
+<script type="text/javascript" src="scripts/mixed.js"></script>
+</head></html>

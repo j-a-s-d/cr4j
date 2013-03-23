@@ -1,0 +1,16 @@
+body {
+	font-family: sans-serif;
+}
+
+label {
+	font-size: 24px;
+}
+
+#divWorkspace {
+	padding: 5%;
+}
+
+#divTimeSpent {
+	margin-top: 1%;
+	color: #ccc;
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jade.min.js"></script>
+<script type="text/javascript" src="scripts/cr4j.min.js"></script>
+<script type="text/template" id="main-jade"></script><script>
+(function() { "use strict";
+	var ls = new Date();
+	cr4j.setParameters({ path: '/' }).loadTemplates(function() {
+		var rs = new Date();
+		document.write(cr4j.renderTemplate("main-jade"));
+		var re = new Date();
+		document.getElementById('divTimeSpent').innerHTML = '<b>templates loaded in ' + (rs - ls) + ' ms<br/>page rendered in ' + (re - rs) + ' ms<br/><br/>total spent time: ' + ((rs - ls) + (re - rs)) + ' ms';
+	});
+}());</script></head></html>
